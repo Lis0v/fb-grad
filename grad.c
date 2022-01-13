@@ -5,10 +5,12 @@
 
 #define x_res 	1280
 #define y_res 	800
+#define x_off	100
+#define y_off	100
 #define col_n	4
 
 int main(){
-	int fd, x, y, x_size=255, y_size=255, x_off=0, y_off=0;
+	int fd, x, y, x_size=255, y_size=255;
 	unsigned char *fbmem;
 
 	fd = open("/dev/fb0", O_RDWR);
