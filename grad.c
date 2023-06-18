@@ -17,9 +17,9 @@ int main(){
 	
 	for(y = 0; y < y_size; y++){
 		for(x = 0; x < x_size; x++){
-			fbmem[x * col_n 	] = y;
-			fbmem[x * col_n + 1 ] = x;
-			fbmem[x * col_n + 2 ] = 255;
+			fbmem[x * col_n + 2 ] = 255; 	//R
+			fbmem[x * col_n + 1 ] = y;		//G
+			fbmem[x * col_n 	] = x;		//B
 		}
 		fbmem += x_res * col_n;
 	}
