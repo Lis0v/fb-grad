@@ -12,8 +12,9 @@ int main(){
 
 	fd = open("/dev/fb0", O_RDWR);
 	fbmem = mmap(NULL, x_res * y_res * col_n, PROT_WRITE, MAP_SHARED, fd, 0);
-	
+
 	fbmem += y_off * x_res * col_n + x_off * col_n;
+	
 	for(y = 0; y < y_size; y++){
 		for(x = 0; x < x_size; x++){
 			fbmem[x * col_n 	] = y;
@@ -22,7 +23,6 @@ int main(){
 		}
 		fbmem += x_res * col_n;
 	}
-
 	close(fd);
 	return 0;
 }
