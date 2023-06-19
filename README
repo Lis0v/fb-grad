@@ -1,1 +1,2 @@
+small library for plotting pixels to linux framebuffer
 example draws a box using plot function that takes x, y coordinates and rgb values as arguments
