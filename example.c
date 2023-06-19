@@ -1,11 +1,10 @@
 #include "fbplot.h"
+#include <math.h>
+
+#define x_mid x_res/2
 
 int main(){
 	setup();
-	for(int i=0;i<100;i++){
-		for(int j=0;j<100;j++){
-			plot(i, j, WHITE);
-		}
-	}
+	zplot(100, 100, 4, WHITE);
 	setdown();
 }

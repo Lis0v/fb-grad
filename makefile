@@ -1,2 +1,2 @@
 target:
-	cc example.c fbplot.h
+	cc example.c fbplot.h -lm
