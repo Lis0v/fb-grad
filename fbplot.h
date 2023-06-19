@@ -5,9 +5,9 @@
 #include <string.h>
 #include <sys/mman.h>
 
-#define x_res	1280
-#define y_res	800
-#define col_n	4
+#define x_res	1280	//x resolution of display
+#define y_res	800	//y resolution of display
+#define col_n	4	//density of one pixel??? (r+g+b+blank=4)???
 
 #define WHITE	255, 255, 255
 #define RED	255, 0, 0
