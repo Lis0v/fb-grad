@@ -43,6 +43,22 @@ void zplot(int x, int y, int z, int r, int g, int b){
 	}
 }
 
+void zplot_line(int x, int y, int h, int z, int r, int g, int b){
+	fbmem=fbmem0;
+	fbmem += x_res * col_n;
+	for(int k=0;k<h;k++){
+		for(int j=0;j<z;j++){
+			for(int i=0;i<z;i++){
+				fbmem[ (x + x_res * y + i) * col_n + 2 ] = r;
+				fbmem[ (x + x_res * y + i) * col_n + 1 ] = g;
+				fbmem[ (x + x_res * y + i) * col_n     ] = b;
+			}
+			fbmem += x_res * col_n;
+		}
+	}
+	fbmem += x_res * col_n * z;
+}
+
 void setdown(){
 	close(fd);
 }

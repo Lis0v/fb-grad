@@ -5,6 +5,6 @@
 
 int main(){
 	setup();
-	zplot(100, 100, 4, WHITE);
+	zplot_line(100, 100, 50, 2, WHITE);
 	setdown();
 }
