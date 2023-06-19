@@ -10,7 +10,7 @@
 #define col_n	4
 
 #define WHITE	255, 255, 255
-#define RED		255, 0, 0
+#define RED	255, 0, 0
 #define GREEN	0, 255, 0
 #define BLUE	0, 0, 255
 
