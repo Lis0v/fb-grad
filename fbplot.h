@@ -10,6 +10,7 @@
 #define col_n	4		//density of one pixel??? (r+g+b+blank=4)???
 
 #define	WHITE	255, 255, 255
+#define GRAY	127, 127, 127
 #define	RED		255, 0, 0
 #define	GREEN	0, 255, 0
 #define	BLUE	0, 0, 255
