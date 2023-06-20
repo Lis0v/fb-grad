@@ -13,7 +13,7 @@ int main(){
 			for(int i=0;i<x_res;i++){
 				x=i;
 				y=y_res/2+sin(x*10)*j;
-				plot(x, y, 0, j, 127);
+				plot(x, y, 0, j, 255);
 			}
 			usleep(600);
 		}
@@ -22,7 +22,7 @@ int main(){
 			for(int i=0;i<x_res;i++){
 				x=i;
 				y=y_res/2+sin(x*10)*j;
-				plot(x, y, 127, j, 0);
+				plot(x, y, 255, j, 0);
 			}
 			usleep(600);
 		}
