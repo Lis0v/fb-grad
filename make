@@ -1,2 +1,2 @@
 #!/bin/sh
-cc example$1.c -lm
+cc $1 -lm
